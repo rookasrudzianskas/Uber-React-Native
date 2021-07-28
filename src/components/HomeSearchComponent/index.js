@@ -1,7 +1,8 @@
 import React from 'react';
 import {Text, View} from "react-native";
 import styles from "./styles";
-import {Entypo, Feather} from "@expo/vector-icons";
+import {AntDesign, Entypo, Feather} from "@expo/vector-icons";
+import { MaterialIcons } from '@expo/vector-icons';
 
 const HomeSearch = () => {
     return (
@@ -9,9 +10,9 @@ const HomeSearch = () => {
             <Text style={styles.inputText}>Where To?</Text>
 
             <View style={styles.timeContainer}>
-                <Feather name="clock" size={24} color="black" />
+                <AntDesign name="clockcircle" size={24} color="black" />
                 <Text>Now</Text>
-                <Entypo name="menu" size={24} color="black" />
+                <MaterialIcons name="keyboard-arrow-down" size={24} color="black" />
 
             </View>
         </View>
