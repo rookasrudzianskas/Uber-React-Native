@@ -26,6 +26,21 @@ const styles = StyleSheet.create({
         borderRadius: 50,
         color:"#535353",
     },
+
+    row: {
+        flexDirection: 'row',
+        padding: 10,
+        alignItems: 'center',
+
+    },
+    iconContainer: {
+        backgroundColor: '#b3b3b3',
+        padding: 10,
+        borderRadius: 25,
+    },
+    destinationText: {
+
+    },
 });
 
 export default styles;
