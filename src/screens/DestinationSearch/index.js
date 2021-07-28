@@ -20,8 +20,9 @@ const DestinationSearch = (props) => {
                 <TextInput value={destinationText} onChangeText={() => setDestinationText(text)} style={styles.textInput} placeholder="Where to" />
 
                 <GooglePlacesAutocomplete
-                    placeholder='Search'
+                    placeholder='Where to'
                     onPress={(data, details = null) => {
+                        setDestinationPlace({data, details});
                         console.log(data, details);
                     }}
                     fetchDetails={true}
