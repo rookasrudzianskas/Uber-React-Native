@@ -1,10 +1,11 @@
 import React from 'react';
-import {Text, View} from "react-native";
+import {Text, TextInput, View} from "react-native";
 
 const DestinationSearch = () => {
     return (
         <View>
-            <Text>Rokas</Text>
+            <TextInput placeholder="Current location" />
+            <TextInput placeholder="Where to" />
         </View>
     );
 };
