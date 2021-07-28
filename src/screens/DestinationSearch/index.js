@@ -11,8 +11,8 @@ const DestinationSearch = (props) => {
     return (
         <SafeAreaView>
             <View style={styles.container}>
-                <TextInput style={styles.textInput} placeholder="From" />
-                <TextInput style={styles.textInput} placeholder="Where to" />
+                <TextInput value={fromText} onChangeText={() => setFromText(text)} style={styles.textInput} placeholder="From" />
+                <TextInput value={destinationText} onChangeText={() => setDestinationText(text)} style={styles.textInput} placeholder="Where to" />
             </View>
         </SafeAreaView>
     );
