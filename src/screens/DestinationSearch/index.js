@@ -9,6 +9,9 @@ const DestinationSearch = (props) => {
     const [fromText, setFromText] = useState('');
     const [destinationText, setDestinationText] = useState('');
 
+    const [originPlace, setOriginPlace] = useState(null);
+    const [destinationPlace, setDestinationPlace] = useState(null);
+
 
     return (
         <SafeAreaView>
@@ -21,6 +24,7 @@ const DestinationSearch = (props) => {
                     onPress={(data, details = null) => {
                         console.log(data, details);
                     }}
+                    fetchDetails={true}
                     query={{
                         key: 'AIzaSyBmXijpsVGRk39hnHdg6aWoeZ_Uaj81B-Y',
                         language: 'en',
