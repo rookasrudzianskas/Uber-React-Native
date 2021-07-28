@@ -1,12 +1,15 @@
 import React from 'react';
-import {Text, TextInput, View} from "react-native";
+import {SafeAreaView, Text, TextInput, View} from "react-native";
+import styles from "./styles";
 
 const DestinationSearch = () => {
     return (
-        <View>
-            <TextInput placeholder="Current location" />
-            <TextInput placeholder="Where to" />
-        </View>
+        <SafeAreaView>
+            <View style={styles.container}>
+                <TextInput style={styles.textInput} placeholder="Current location" />
+                <TextInput style={styles.textInput} placeholder="Where to" />
+            </View>
+        </SafeAreaView>
     );
 };
 
