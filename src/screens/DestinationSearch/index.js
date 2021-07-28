@@ -9,6 +9,7 @@ const DestinationSearch = (props) => {
     const [fromText, setFromText] = useState('');
     const [destinationText, setDestinationText] = useState('');
 
+
     const [originPlace, setOriginPlace] = useState(null);
     const [destinationPlace, setDestinationPlace] = useState(null);
 
