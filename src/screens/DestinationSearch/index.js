@@ -35,4 +35,3 @@ const DestinationSearch = (props) => {
 
 export default DestinationSearch;
 
-/// AIzaSyBmXijpsVGRk39hnHdg6aWoeZ_Uaj81B-Y
