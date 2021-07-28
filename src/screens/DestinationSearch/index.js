@@ -13,6 +13,7 @@ const DestinationSearch = (props) => {
     const [destinationPlace, setDestinationPlace] = useState(null);
 
 
+
     return (
         <SafeAreaView>
             <View style={styles.container}>
