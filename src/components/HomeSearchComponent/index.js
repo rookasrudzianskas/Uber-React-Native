@@ -10,9 +10,9 @@ const HomeSearch = () => {
             <Text style={styles.inputText}>Where To?</Text>
 
             <View style={styles.timeContainer}>
-                <AntDesign name="clockcircle" size={24} color="black" />
-                <Text>Now</Text>
-                <MaterialIcons name="keyboard-arrow-down" size={24} color="black" />
+                <AntDesign name="clockcircle" size={24} color="#535353" />
+                <Text style={{fontWeight: '600'}}>Now</Text>
+                <MaterialIcons name="keyboard-arrow-down" size={24} color="#535353" />
 
             </View>
         </View>
