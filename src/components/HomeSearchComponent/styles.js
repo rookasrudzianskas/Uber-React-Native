@@ -29,8 +29,10 @@ const styles = StyleSheet.create({
 
     row: {
         flexDirection: 'row',
-        padding: 10,
+        padding: 20,
         alignItems: 'center',
+        borderBottomWidth: 1,
+        borderColor: '#dbdbdb',
 
     },
     iconContainer: {
@@ -39,7 +41,9 @@ const styles = StyleSheet.create({
         borderRadius: 25,
     },
     destinationText: {
-
+        marginLeft: 10,
+        fontWeight: "500",
+        fontSize: 16,
     },
 });
 

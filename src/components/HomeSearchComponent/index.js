@@ -25,6 +25,14 @@ const HomeSearch = () => {
                 <Text style={styles.destinationText}>Spin Nightclub</Text>
             </View>
 
+            <View style={styles.row}>
+                <View style={[styles.iconContainer, {backgroundColor: '#218cff'}]}>
+                    <Entypo name="home" size={20} color="#ffffff" />
+                </View>
+
+                <Text style={styles.destinationText}>Spin Nightclub</Text>
+            </View>
+
         </View>
 
     );
