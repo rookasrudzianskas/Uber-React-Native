@@ -6,7 +6,7 @@ const DestinationSearch = () => {
     return (
         <SafeAreaView>
             <View style={styles.container}>
-                <TextInput style={styles.textInput} placeholder="Current location" />
+                <TextInput style={styles.textInput} placeholder="From" />
                 <TextInput style={styles.textInput} placeholder="Where to" />
             </View>
         </SafeAreaView>
