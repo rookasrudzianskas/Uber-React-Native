@@ -42,10 +42,21 @@ const styles = StyleSheet.create({
         right: 10,
     },
     circle: {
-
+        width: 5,
+        height: 5,
+        backgroundColor: 'black',
+        position: 'absolute',
+        top: 33,
+        left: 23,
+        borderRadius: 50,
     },
     line: {
-
+        width: 1,
+        height: 30,
+        backgroundColor: '#919191',
+        position: 'absolute',
+        top: 43,
+        left: 25,
     },
     square: {
         width: 5,
