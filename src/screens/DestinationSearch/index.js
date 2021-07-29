@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {SafeAreaView, Text, TextInput, View} from "react-native";
 import styles from "./styles";
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
+import PlaceRow from "./placeRow";
 
 
 const DestinationSearch = (props) => {
@@ -47,6 +48,7 @@ const DestinationSearch = (props) => {
                         key: 'AIzaSyBmXijpsVGRk39hnHdg6aWoeZ_Uaj81B-Y',
                         language: 'en',
                     }}
+                    renderRow={(data) => <PlaceRow data={data} />}
                 />
 
 
