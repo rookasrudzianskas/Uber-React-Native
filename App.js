@@ -32,14 +32,10 @@ export default function App() {
 
 
     return (
-      // <SafeAreaView>
-      //   <View style={styles.container}>
-      //     <StatusBar style="auto" />
             <NavigationContainer>
+              <StatusBar style="auto" />
                 <RouteNavigator />
             </NavigationContainer>
-        // </View>
-      // </SafeAreaView>
   );
 }
 
