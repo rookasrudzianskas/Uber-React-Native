@@ -46,6 +46,18 @@ const styles = StyleSheet.create({
         marginTop: 20,
         width: 20,
         marginRight: 10,
+    },
+    button: {
+        backgroundColor: 'black',
+        padding: 10,
+        margin: 10,
+        alignItems: 'center',
+        marginLeft: 10,
+        marginRight: 10,
+    },
+    confirm: {
+        color: 'white',
+        fontWeight: 'bold',
     }
 
 });

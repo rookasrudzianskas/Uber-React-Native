@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View} from "react-native";
+import {Pressable, Text, View} from "react-native";
 import UberTypeRow from "../UberTypeRow";
 import typesData from "../../../assets/data/types";
 import {Ionicons, MaterialIcons} from "@expo/vector-icons";
@@ -7,7 +7,10 @@ import styles from "./styles";
 
 const UberTypes = () => {
 
-    console.log(typesData)
+    const confirm = () => {
+        console.log("Clicked")
+    }
+
     return (
         <View>
             {typesData.map(type => <UberTypeRow key={type.id} type={type} />)}
@@ -32,6 +35,12 @@ const UberTypes = () => {
                     <Ionicons name="arrow-forward" size={24} color="black" />
                 </View>
             </View>
+
+            <Pressable onPress={confirm} style={styles.button}>
+                <Text style={styles.confirm}>
+                    Confirm Uber
+                </Text>
+            </Pressable>
         </View>
     );
 };
