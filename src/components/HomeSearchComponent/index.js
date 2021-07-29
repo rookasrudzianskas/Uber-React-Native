@@ -1,13 +1,20 @@
 import React from 'react';
-import {Text, View} from "react-native";
+import {Pressable, Text, View} from "react-native";
 import styles from "./styles";
 import {AntDesign, Entypo, Feather, FontAwesome5, Ionicons} from "@expo/vector-icons";
 import { MaterialIcons } from '@expo/vector-icons';
+import {useNavigation} from "@react-navigation/native";
 
 const HomeSearch = () => {
+
+    const navigation = useNavigation();
+
+    const goToSearch = () => {
+        navigation.navigate('DestinationSearch');
+    }
     return (
         <View>
-        <View style={styles.inputBox}>
+        <Pressable onPress={goToSearch} style={styles.inputBox}>
             <Text style={styles.inputText}>Where To?</Text>
 
             <View style={styles.timeContainer}>
@@ -15,7 +22,7 @@ const HomeSearch = () => {
                 <Text style={{fontWeight: '600'}}>Now</Text>
                 <MaterialIcons name="keyboard-arrow-down" size={24} color="#535353" />
             </View>
-        </View>
+        </Pressable>
 
             <View style={styles.row}>
                 <View style={styles.iconContainer}>
