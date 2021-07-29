@@ -5,8 +5,7 @@ import {Ionicons} from "@expo/vector-icons";
 
 const UberTypeRow = (props) => {
 
-    const type = props;
-    console.log(type.type);
+    const {type} = props;
 
     return (
         <View style={styles.container}>
@@ -14,7 +13,7 @@ const UberTypeRow = (props) => {
             <Image style={styles.image} source={require("../../../assets/images/UberX.jpeg")} />
             <View style={styles.middleContainer}>
                 <Text style={styles.type}>
-                    {type.type.type}{" "}
+                    {type.type}{" "}
 
                     <Ionicons name="person" size={16} color="black" />
 
