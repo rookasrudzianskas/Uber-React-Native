@@ -13,14 +13,14 @@ const CustomDrawer = (props) => {
                 <View style={{borderTopWidth: 1, borderColor: '#212121', borderBottomWidth: 1}}>
                     <Pressable onPress={() => console.log("Make Money Driving")}>
                         <View style={{flexDirection: 'row', alignItems: 'center'}}>
-                            <Text style={{color: '#dddddd', fontSize: 18, paddingVertical: 5,}}>Messages</Text>
+                            <Text style={{color: '#dddddd', fontSize: 22, paddingVertical: 10, }}>Messages</Text>
                             <Entypo style={{marginLeft: 10}}name="dot-single" size={27} color="Azure" />
                         </View>
                     </Pressable>
                 </View>
 
                 <Pressable onPress={() => console.log("Account")}>
-                    <Text style={{color: '#dddddd', fontSize: 18, paddingVertical: 5,}}>Do more with your account</Text>
+                    <Text style={{color: '#dddddd', fontSize: 18, paddingVertical: 5, marginTop: 15}}>Do more with your account</Text>
                 </Pressable>
 
                 <Pressable onPress={() => console.log("Make Money Driving")}>
