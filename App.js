@@ -1,10 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React, {useEffect, useState} from 'react';
 import {Platform, SafeAreaView, StyleSheet, Text, View} from 'react-native';
-import HomeScreen from "./src/screens/HomeScreen";
-import DestinationSearch from "./src/screens/DestinationSearch";
-import SearchResults from "./src/screens/SearchResults";
-import HomeMap from "./src/components/HomeMap";
 import * as Location from "expo-location";
 import RouteNavigator from "./src/navigation/router";
 
