@@ -18,9 +18,10 @@ const styles = StyleSheet.create({
     type: {
         fontWeight: 'bold',
         fontSize: 18,
+        marginBottom: 5,
     },
     time: {
-
+        color: '#5d5d5d',
     },
     rightContainer: {
         width: 100,
@@ -28,7 +29,9 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
     },
     price: {
-
+        fontWeight: 'bold',
+        fontSize: 18,
+        marginLeft: 6,
     },
 
 });
