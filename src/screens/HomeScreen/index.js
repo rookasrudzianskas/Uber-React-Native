@@ -8,7 +8,7 @@ import HomeSearch from "../../components/HomeSearchComponent";
 const HomeScreen = () => {
     return (
         <View style={styles.container}>
-            <View style={{height: Dimensions.get('window').height - 550}}>
+            <View style={{height: Dimensions.get('window').height - 450}}>
 
                 <HomeMap />
             </View>
