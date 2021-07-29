@@ -71,6 +71,11 @@ const DestinationSearch = (props) => {
 
                 />
 
+                <View style={styles.circle} />
+                <View style={styles.line} />
+                <View style={styles.square} />
+
+
 
             </View>
         </SafeAreaView>

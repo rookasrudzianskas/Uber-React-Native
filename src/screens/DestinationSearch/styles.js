@@ -9,6 +9,7 @@ const styles = StyleSheet.create({
         padding: 10,
         backgroundColor: '#eee',
         marginVertical: 5,
+        marginLeft: 40,
         // marginTop: -10,
     },
     row: {
@@ -40,6 +41,20 @@ const styles = StyleSheet.create({
         left: 10,
         right: 10,
     },
+    circle: {
+
+    },
+    line: {
+
+    },
+    square: {
+        width: 5,
+        height: 5,
+        backgroundColor: 'black',
+        position: 'absolute',
+        top: 80,
+        left: 23,
+    }
 
 });
 
