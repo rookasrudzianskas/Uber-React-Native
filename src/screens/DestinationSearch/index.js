@@ -62,10 +62,6 @@ const DestinationSearch = (props) => {
     }, []);
 
 
-
-
-
-
     return (
         <SafeAreaView>
             <View style={styles.container}>
