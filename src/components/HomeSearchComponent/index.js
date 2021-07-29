@@ -12,6 +12,8 @@ const HomeSearch = () => {
     const goToSearch = () => {
         navigation.navigate('DestinationSearch');
     }
+
+
     return (
         <View>
         <Pressable onPress={goToSearch} style={styles.inputBox}>

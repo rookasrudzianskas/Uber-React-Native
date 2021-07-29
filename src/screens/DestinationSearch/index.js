@@ -29,32 +29,6 @@ const DestinationSearch = (props) => {
         }
     }, [originPlace, destinationPlace]);
 
-    // live location things 👇
-
-    // useEffect(() => {
-    //     (async () => {
-    //         let { status } = await Location.requestForegroundPermissionsAsync();
-    //         if (status !== 'granted') {
-    //             setErrorMsg('Permission to access location was denied');
-    //             return;
-    //         }
-    //
-    //         let location = await Location.getCurrentPositionAsync({});
-    //         setLocation(location);
-    //     })();
-    // }, []);
-    //
-    // let text = 'Waiting..';
-    // if (errorMsg) {
-    //     text = errorMsg;
-    // } else if (location) {
-    //     text = JSON.stringify(location);
-    // }
-    //
-    // console.log(text);
-    //
-    // // end of live location thing 👆 //
-
     useEffect(() =>  {
         // this does something magical, but it works
         Location.installWebGeolocationPolyfill();
