@@ -4,6 +4,7 @@ import styles from "./styles";
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 import PlaceRow from "./placeRow";
 import * as Location from "expo-location";
+import {useNavigation} from "@react-navigation/native";
 
 
 const DestinationSearch = (props) => {
@@ -21,11 +22,14 @@ const DestinationSearch = (props) => {
         description: 'Work',
         geometry: { location: { lat: 48.8496818, lng: 2.2940881 } },
     };
+    const navigation = useNavigation();
+
 
     useEffect(() =>  {
         // fires everytime the origin place and destination place changes
         if(originPlace && destinationPlace) {
             // navigation
+            navigation.navigate('SearchResults');
         }
     }, [originPlace, destinationPlace]);
 
