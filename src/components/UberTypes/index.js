@@ -6,7 +6,7 @@ import typesData from "../../../assets/data/types";
 const UberTypes = () => {
     return (
         <View>
-            {typesData.map(type => <UberTypeRow key={type.id} />)}
+            {typesData.map(type => <UberTypeRow key={type.id} type={type} />)}
         </View>
     );
 };

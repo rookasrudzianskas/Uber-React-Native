@@ -3,14 +3,18 @@ import {Image, Text, View} from "react-native";
 import styles from "./styles";
 import {Ionicons} from "@expo/vector-icons";
 
-const UberTypeRow = () => {
+const UberTypeRow = (props) => {
+
+    const type = props;
+    console.log(type.type.type);
+
     return (
         <View style={styles.container}>
 
             <Image style={styles.image} source={require("../../../assets/images/UberX.jpeg")} />
             <View style={styles.middleContainer}>
                 <Text style={styles.type}>
-                    UberX{" "}
+                    {type.type.type}{" "}
 
                     <Ionicons name="person" size={16} color="black" />
 
