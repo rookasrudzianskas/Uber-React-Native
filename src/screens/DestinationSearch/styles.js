@@ -30,6 +30,16 @@ const styles = StyleSheet.create({
         backgroundColor: '#efefef',
         height: 1,
     },
+    listView: {
+        position: 'absolute',
+        top: 92,
+    },
+    autoCompleteContainer: {
+        position: 'absolute',
+        top: 10,
+        left: 10,
+        right: 10,
+    },
 
 });
 

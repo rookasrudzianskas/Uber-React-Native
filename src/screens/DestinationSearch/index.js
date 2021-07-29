@@ -31,16 +31,8 @@ const DestinationSearch = (props) => {
                     suppressDefaultStyles
                     styles={{
                         textInput: styles.textInput,
-                        container: {
-                            position: 'absolute',
-                            top: 10,
-                            left: 10,
-                            right: 10,
-                        },
-                        listView: {
-                            position: 'absolute',
-                            top: 105,
-                        },
+                        container: styles.autoCompleteContainer,
+                        listView: styles.listView,
                         separator: styles.separator,
                     }}
                     fetchDetails={true}
@@ -62,11 +54,8 @@ const DestinationSearch = (props) => {
                     styles={{
                         textInput: styles.textInput,
                         container: {
-                            position: 'absolute',
-                            top: 65,
-                            left: 10,
-                            right: 10,
-                        },
+                            ...styles.autoCompleteContainer,
+                            top: 55, },
                         separator: styles.separator,
 
 
