@@ -14,6 +14,8 @@ const DestinationSearch = (props) => {
     const [errorMsg, setErrorMsg] = useState(null);
     const [position, setPosition] = useState(null);
 
+    const navigation = useNavigation();
+
     const homePlace = {
         description: 'Home',
         geometry: { location: { lat: 48.8152937, lng: 2.4597668 } },
@@ -22,7 +24,8 @@ const DestinationSearch = (props) => {
         description: 'Work',
         geometry: { location: { lat: 48.8496818, lng: 2.2940881 } },
     };
-    const navigation = useNavigation();
+
+
 
     const checkNavigation = () => {
         // fires everytime the origin place and destination place changes
