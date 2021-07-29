@@ -11,7 +11,7 @@ const DestinationSearch = (props) => {
     useEffect(() =>  {
         // fires everytime the origin place and destination place changes
         if(originPlace && destinationPlace) {
-            console.log("Redirect something");
+
         }
     }, [originPlace, destinationPlace]);
 
