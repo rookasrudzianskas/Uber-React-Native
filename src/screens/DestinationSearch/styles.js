@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     row: {
         flexDirection: 'row',
         alignItems: 'center',
-        margin: 5,
+        marginVertical: 10,
     },
     iconContainer: {
         backgroundColor: "#a2a2a2",

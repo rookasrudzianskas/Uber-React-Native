@@ -40,7 +40,11 @@ const DestinationSearch = (props) => {
                         listView: {
                             position: 'absolute',
                             top: 105,
-                        }
+                        },
+                        separator: {
+                          backgroundColor: '#efefef',
+                            height: 1,
+                        },
                     }}
                     fetchDetails={true}
                     query={{
