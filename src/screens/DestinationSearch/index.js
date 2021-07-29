@@ -27,6 +27,9 @@ const DestinationSearch = (props) => {
                         setDestinationPlace({data, details});
                         console.log(data, details);
                     }}
+                    styles={{
+                        textInput: styles.textInput,
+                    }}
                     fetchDetails={true}
                     query={{
                         key: 'AIzaSyBmXijpsVGRk39hnHdg6aWoeZ_Uaj81B-Y',
