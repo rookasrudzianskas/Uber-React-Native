@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React, {useEffect, useState} from 'react';
-import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import {Platform, SafeAreaView, StyleSheet, Text, View} from 'react-native';
 import HomeScreen from "./src/screens/HomeScreen";
 import DestinationSearch from "./src/screens/DestinationSearch";
 import SearchResults from "./src/screens/SearchResults";
@@ -27,6 +27,15 @@ export default function App() {
             setLocation(location);
         })();
     }, []);
+
+    // useEffect(() => {
+    //     if(Platform.OS === 'android') {
+    //         androidPermissions();
+    //     } else {
+    //         // request permissions
+    //
+    //     }
+    // }, []);
 
     // end of live location thing 👆
 
