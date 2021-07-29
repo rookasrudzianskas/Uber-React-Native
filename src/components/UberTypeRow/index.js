@@ -7,10 +7,21 @@ const UberTypeRow = (props) => {
 
     const {type} = props;
 
+    const getImageName = () => {
+        if(type.type === 'UberX') {
+            return require('../../../assets/images/UberX.jpeg');
+        }
+
+        if(type.type === 'Comfort') {
+            return require('../../../assets/images/Comfort.jpeg');
+        }
+            return require('../../../assets/images/UberXL.jpeg');
+    }
+
     return (
         <View style={styles.container}>
 
-            <Image style={styles.image} source={require("../../../assets/images/UberX.jpeg")} />
+            <Image style={styles.image} source={getImageName()} />
             <View style={styles.middleContainer}>
                 <Text style={styles.type}>
                     {type.type}{" "}
