@@ -40,7 +40,6 @@ const DestinationSearch = (props) => {
                         listView: {
                             position: 'absolute',
                             top: 105,
-                            backgroundColor: 'red',
                         }
                     }}
                     fetchDetails={true}
