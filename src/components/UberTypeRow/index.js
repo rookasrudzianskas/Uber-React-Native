@@ -10,9 +10,9 @@ const UberTypeRow = () => {
             <Image style={styles.image} source={require("../../../assets/images/UberX.jpeg")} />
             <View style={styles.middleContainer}>
                 <Text style={styles.type}>
-                    UberX
+                    UberX{" "}
 
-                    <Ionicons name="person" size={12} color="black" />
+                    <Ionicons name="person" size={16} color="black" />
 
                     3
                 </Text>
