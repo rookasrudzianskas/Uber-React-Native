@@ -1,5 +1,5 @@
 import React from 'react';
-import {Dimensions, StyleSheet, Text, View} from "react-native";
+import {Dimensions, Image, StyleSheet, Text, View} from "react-native";
 import MapView, {Marker} from 'react-native-maps';
 import styles from "./styles";
 
@@ -23,8 +23,10 @@ const HomeMap = () => {
                     <Marker coordinate={{
                         latitude: 37.78825,
                         longitude: -122.4324 }}
-                        image={require("../../../assets/images/top-UberX.png")}
-                    />
+                        // image={require("../../../assets/images/top-UberX.png")}
+                    >
+                        <Image source={require("../../../assets/images/top-UberX.png")} style={{height: 70, width: 70 }}/>
+                    </Marker>
 
                 </MapView>
             // </View>
