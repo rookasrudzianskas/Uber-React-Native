@@ -31,7 +31,7 @@ const UberTypeRow = (props) => {
                 <Ionicons name="pricetag" size={18} color="#42d742" />
 
                 <Text style={styles.price}>
-                    est. $27
+                    est. ${type.price}
                 </Text>
 
             </View>
