@@ -11,6 +11,7 @@ const HomeMap = () => {
             <View style={styles.container}>
                 <MapView
                     style={styles.map}
+                    provider="google"
                     initialRegion={{
                         latitude: 37.78825,
                         longitude: -122.4324,
