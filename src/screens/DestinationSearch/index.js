@@ -18,11 +18,9 @@ const DestinationSearch = (props) => {
     return (
         <SafeAreaView>
             <View style={styles.container}>
-                <TextInput value={fromText} onChangeText={() => setFromText(text)} style={styles.textInput} placeholder="From" />
-                <TextInput value={destinationText} onChangeText={() => setDestinationText(text)} style={styles.textInput} placeholder="Where to" />
 
                 <GooglePlacesAutocomplete
-                    placeholder='Where to'
+                    placeholder='From'
                     onPress={(data, details = null) => {
                         setDestinationPlace({data, details});
                         console.log(data, details);
@@ -36,6 +34,24 @@ const DestinationSearch = (props) => {
                         language: 'en',
                     }}
                 />
+
+
+                <GooglePlacesAutocomplete
+                    placeholder='Where to?'
+                    onPress={(data, details = null) => {
+                        setDestinationPlace({data, details});
+                        console.log(data, details);
+                    }}
+                    styles={{
+                        textInput: styles.textInput,
+                    }}
+                    fetchDetails={true}
+                    query={{
+                        key: 'AIzaSyBmXijpsVGRk39hnHdg6aWoeZ_Uaj81B-Y',
+                        language: 'en',
+                    }}
+                />
+
 
             </View>
         </SafeAreaView>
