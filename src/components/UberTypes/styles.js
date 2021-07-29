@@ -5,6 +5,9 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         marginHorizontal: 20,
+        borderTopWidth: 1,
+        borderColor: '#eee',
+        marginTop: 10,
     },
     firstPart: {
         flexDirection: 'row',
@@ -15,6 +18,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         paddingRight: 15,
+        marginTop: 20,
 
     },
     rounded: {
@@ -25,7 +29,25 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: 30,
+    },
+     card: {
+        marginTop: 20,
+        marginLeft: 20,
+         flex: 1,
+     },
+    text1: {
+        fontWeight: '600',
+        fontSize: 20,
+    },
+    text2: {
+
+    },
+    arrow: {
+        marginTop: 20,
+        width: 20,
+        marginRight: 10,
     }
+
 });
 
 export default styles;

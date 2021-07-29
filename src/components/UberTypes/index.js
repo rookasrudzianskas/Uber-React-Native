@@ -24,7 +24,7 @@ const UberTypes = () => {
                 </View>
 
                 <View style={styles.card}>
-                    <Text styles={styles.text1}>Personal</Text>
+                    <Text styles={{fontWeight: 'bold', fontSize: 20,}}>Personal</Text>
                     <Text styles={styles.text2}>Visa 0037</Text>
                 </View>
 
