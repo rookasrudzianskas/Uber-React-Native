@@ -39,20 +39,23 @@ const RouteMap = (props) => {
                         origin={origin}
                         destination={destination}
                         apikey={"AIzaSyBmXijpsVGRk39hnHdg6aWoeZ_Uaj81B-Y"}
-                        strokeWidth={3}
-                        strokeColor="hotpink"
+                        strokeWidth={6}
+                        strokeColor="black"
                     />
 
 
-                        {/*<Marker*/}
-                        {/*    coordinate={{*/}
-                        {/*        latitude: 28.450627,*/}
-                        {/*        longitude: -16.263045, }}*/}
-                        {/*    // image={require("../../../assets/images/top-UberX.png")}*/}
-                        {/*>*/}
-                        {/*</Marker>*/}
+                        <Marker
+                            coordinate={origin}
+                            title={"Origin"}
+                        >
+                        </Marker>
 
 
+                        <Marker
+                            coordinate={destination}
+                            title={"Destination"}
+                        >
+                        </Marker>
 
 
 
