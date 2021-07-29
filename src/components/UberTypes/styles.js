@@ -49,11 +49,12 @@ const styles = StyleSheet.create({
     },
     button: {
         backgroundColor: 'black',
-        padding: 10,
+        padding: 20,
         margin: 10,
         alignItems: 'center',
         marginLeft: 10,
         marginRight: 10,
+        marginTop: 30,
     },
     confirm: {
         color: 'white',
