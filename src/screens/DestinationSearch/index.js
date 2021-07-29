@@ -28,6 +28,7 @@ const DestinationSearch = (props) => {
                         setOriginPlace({data, details});
                         // console.log(data, details);
                     }}
+                    enablePoweredByContainer={false}
                     suppressDefaultStyles
                     styles={{
                         textInput: styles.textInput,
@@ -50,6 +51,7 @@ const DestinationSearch = (props) => {
                         setDestinationPlace({data, details});
                         // console.log(data, details);
                     }}
+                    enablePoweredByContainer={false}
                     suppressDefaultStyles
                     styles={{
                         textInput: styles.textInput,
