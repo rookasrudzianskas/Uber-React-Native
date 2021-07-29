@@ -8,7 +8,7 @@ import HomeMap from "./src/components/HomeMap";
 
 export default function App() {
   return (
-      <SafeAreaView>
+      // <SafeAreaView>
         <View style={styles.container}>
           {/*<HomeScreen />*/}
           {/*  <DestinationSearch />*/}
@@ -16,7 +16,7 @@ export default function App() {
           {/*  <HomeMap />*/}
           <StatusBar style="auto" />
         </View>
-      </SafeAreaView>
+      // </SafeAreaView>
   );
 }
 
