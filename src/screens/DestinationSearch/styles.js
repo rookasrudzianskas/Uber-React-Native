@@ -26,6 +26,10 @@ const styles = StyleSheet.create({
     locationText: {
 
     },
+    separator: {
+        backgroundColor: '#efefef',
+        height: 1,
+    },
 
 });
 

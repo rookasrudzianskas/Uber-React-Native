@@ -41,10 +41,7 @@ const DestinationSearch = (props) => {
                             position: 'absolute',
                             top: 105,
                         },
-                        separator: {
-                          backgroundColor: '#efefef',
-                            height: 1,
-                        },
+                        separator: styles.separator,
                     }}
                     fetchDetails={true}
                     query={{
@@ -70,6 +67,8 @@ const DestinationSearch = (props) => {
                             left: 10,
                             right: 10,
                         },
+                        separator: styles.separator,
+
 
                     }}
                     fetchDetails={true}
@@ -77,6 +76,8 @@ const DestinationSearch = (props) => {
                         key: 'AIzaSyBmXijpsVGRk39hnHdg6aWoeZ_Uaj81B-Y',
                         language: 'en',
                     }}
+                    renderRow={(data) => <PlaceRow data={data} />}
+
                 />
 
 
