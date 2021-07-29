@@ -44,6 +44,7 @@ const DestinationSearch = (props) => {
                     }}
                     styles={{
                         textInput: styles.textInput,
+                        // marginTop: -100,
                     }}
                     fetchDetails={true}
                     query={{
