@@ -57,7 +57,7 @@ const DestinationSearch = (props) => {
 
     useEffect(() =>  {
         // this does something magical, but it works
-        Location.installWebGeolocationPolyfill()
+        Location.installWebGeolocationPolyfill();
         navigator.geolocation.getCurrentPosition(setPosition);
     }, []);
 
