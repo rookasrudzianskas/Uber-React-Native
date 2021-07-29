@@ -13,6 +13,15 @@ const DestinationSearch = (props) => {
     const [errorMsg, setErrorMsg] = useState(null);
     const [position, setPosition] = useState(null);
 
+    const homePlace = {
+        description: 'Home',
+        geometry: { location: { lat: 48.8152937, lng: 2.4597668 } },
+    };
+    const workPlace = {
+        description: 'Work',
+        geometry: { location: { lat: 48.8496818, lng: 2.2940881 } },
+    };
+
     useEffect(() =>  {
         // fires everytime the origin place and destination place changes
         if(originPlace && destinationPlace) {
@@ -82,6 +91,7 @@ const DestinationSearch = (props) => {
                         key: 'AIzaSyBmXijpsVGRk39hnHdg6aWoeZ_Uaj81B-Y',
                         language: 'en',
                     }}
+                    predefinedPlaces={[homePlace, workPlace]}
                     renderRow={(data) => <PlaceRow data={data} />}
                     renderDescription={(data) => data.description || data.vicinity}
                 />
@@ -93,6 +103,7 @@ const DestinationSearch = (props) => {
                         setDestinationPlace({data, details});
                         // console.log(data, details);
                     }}
+                    predefinedPlaces={[homePlace, workPlace]}
                     enablePoweredByContainer={false}
                     suppressDefaultStyles
                     styles={{
