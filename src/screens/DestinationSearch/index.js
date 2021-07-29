@@ -24,13 +24,17 @@ const DestinationSearch = (props) => {
     };
     const navigation = useNavigation();
 
-
-    useEffect(() =>  {
+    const checkNavigation = () => {
         // fires everytime the origin place and destination place changes
         if(originPlace && destinationPlace) {
             // navigation
             navigation.navigate('SearchResults');
         }
+    }
+
+    useEffect(() =>  {
+        // fires everytime the origin place and destination place changes
+        checkNavigation();
     }, [originPlace, destinationPlace]);
 
     useEffect(() =>  {
