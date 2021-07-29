@@ -6,6 +6,7 @@ import DestinationSearch from "./src/screens/DestinationSearch";
 import SearchResults from "./src/screens/SearchResults";
 import HomeMap from "./src/components/HomeMap";
 import * as Location from "expo-location";
+import RouteNavigator from "./src/navigation/router";
 
 
 export default function App() {
@@ -36,9 +37,7 @@ export default function App() {
     return (
       // <SafeAreaView>
         <View style={styles.container}>
-          <HomeScreen />
-          {/*  <DestinationSearch />*/}
-          {/*  <SearchResults />*/}
+          <RouteNavigator />
           <StatusBar style="auto" />
         </View>
       // </SafeAreaView>
