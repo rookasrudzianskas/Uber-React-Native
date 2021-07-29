@@ -25,7 +25,7 @@ const HomeMap = () => {
                         longitude: -122.4324 }}
                         // image={require("../../../assets/images/top-UberX.png")}
                     >
-                        <Image source={require("../../../assets/images/top-UberX.png")} style={{height: 70, width: 70 }}/>
+                        <Image source={require("../../../assets/images/top-UberX.png")} style={{height: 70, width: 70, resizeMode: 'contain' }}/>
                     </Marker>
 
                 </MapView>
