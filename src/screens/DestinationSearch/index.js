@@ -27,8 +27,20 @@ const DestinationSearch = (props) => {
                         setOriginPlace({data, details});
                         // console.log(data, details);
                     }}
+                    suppressDefaultStyles
                     styles={{
                         textInput: styles.textInput,
+                        container: {
+                            position: 'absolute',
+                            top: 10,
+                            left: 10,
+                            right: 10,
+                        },
+                        listView: {
+                            position: 'absolute',
+                            top: 105,
+                            backgroundColor: 'red',
+                        }
                     }}
                     fetchDetails={true}
                     query={{
@@ -44,8 +56,16 @@ const DestinationSearch = (props) => {
                         setDestinationPlace({data, details});
                         // console.log(data, details);
                     }}
+                    suppressDefaultStyles
                     styles={{
                         textInput: styles.textInput,
+                        container: {
+                            position: 'absolute',
+                            top: 65,
+                            left: 10,
+                            right: 10,
+                        },
+
                     }}
                     fetchDetails={true}
                     query={{
