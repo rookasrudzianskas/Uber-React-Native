@@ -5,18 +5,30 @@ import {Ionicons} from "@expo/vector-icons";
 
 const UberTypeRow = () => {
     return (
-        <View>
+        <View style={styles.container}>
 
             <Image style={styles.image} source={require("../../../assets/images/UberX.jpeg")} />
             <View style={styles.middleContainer}>
                 <Text style={styles.type}>
                     UberX
 
-                    <Ionicons name="person" size={24} color="black" />
+                    <Ionicons name="person" size={12} color="black" />
+
+                    3
+                </Text>
+
+                <Text style={styles.time}>
+                    8.03PM drop off
                 </Text>
             </View>
 
             <View style={styles.rightContainer}>
+
+                <Ionicons name="pricetag" size={18} color="#42d742" />
+
+                <Text style={styles.price}>
+                    est. $27
+                </Text>
 
             </View>
         </View>
