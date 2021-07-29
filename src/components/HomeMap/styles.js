@@ -2,7 +2,7 @@ import {Dimensions, StyleSheet} from "react-native";
 
 const styles = StyleSheet.create({
     container: {
-        height: 300,
+        height: "100%",
         backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',

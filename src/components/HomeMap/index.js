@@ -8,9 +8,9 @@ const HomeMap = () => {
         // <View style={{height: 300, alignItems: 'center', justifyContent: 'center'}}>
         //     <Text>I am the map</Text>
 
-            <View style={styles.container}>
+            // <View style={styles.container}>
                 <MapView
-                    style={styles.map}
+                    style={{width: '100%', height: "100%"}}
                     provider="google"
                     initialRegion={{
                         latitude: 37.78825,
@@ -19,7 +19,7 @@ const HomeMap = () => {
                         longitudeDelta: 0.0421
                     }}
                 />
-            </View>
+            // </View>
     );
 };
 
