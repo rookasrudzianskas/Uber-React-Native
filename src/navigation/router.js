@@ -19,13 +19,11 @@ const RouteNavigator = (props) => {
         );
     }
     return (
-        <NavigationContainer>
             <Stack.Navigator initialRouteName="Home">
                 <Stack.Screen name="Home" component={DestinationSearch}  options={{
                     headerShown: false,
                 }} />
             </Stack.Navigator>
-        </NavigationContainer>
     );
 };
 

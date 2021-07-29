@@ -3,6 +3,7 @@ import React, {useEffect, useState} from 'react';
 import {Platform, SafeAreaView, StyleSheet, Text, View} from 'react-native';
 import * as Location from "expo-location";
 import RouteNavigator from "./src/navigation/router";
+import {NavigationContainer} from "@react-navigation/native";
 
 
 export default function App() {
@@ -32,10 +33,12 @@ export default function App() {
 
     return (
       // <SafeAreaView>
-        <View style={styles.container}>
-          <StatusBar style="auto" />
-            <RouteNavigator />
-        </View>
+      //   <View style={styles.container}>
+      //     <StatusBar style="auto" />
+            <NavigationContainer>
+                <RouteNavigator />
+            </NavigationContainer>
+        // </View>
       // </SafeAreaView>
   );
 }
