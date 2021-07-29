@@ -12,8 +12,8 @@ export default function App() {
         <View style={styles.container}>
           {/*<HomeScreen />*/}
           {/*  <DestinationSearch />*/}
-          {/*  <SearchResults />*/}
-            <HomeMap />
+            <SearchResults />
+          {/*  <HomeMap />*/}
           <StatusBar style="auto" />
         </View>
       </SafeAreaView>
