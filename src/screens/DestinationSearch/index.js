@@ -11,6 +11,7 @@ const DestinationSearch = (props) => {
     const [destinationPlace, setDestinationPlace] = useState(null);
     const [location, setLocation] = useState(null);
     const [errorMsg, setErrorMsg] = useState(null);
+    const [position, setPosition] = useState(null);
 
     useEffect(() =>  {
         // fires everytime the origin place and destination place changes
@@ -45,6 +46,15 @@ const DestinationSearch = (props) => {
     //
     // // end of live location thing 👆 //
 
+    useEffect(() =>  {
+        // this does something magical, but it works
+        Location.installWebGeolocationPolyfill()
+        navigator.geolocation.getCurrentPosition(setPosition);
+    }, []);
+
+
+
+
 
 
     return (
@@ -58,7 +68,7 @@ const DestinationSearch = (props) => {
                         // console.log(data, details);
                     }}
                     currentLocation={true}
-                    currentLocationLabel={true}
+                    currentLocationLabel={"Current location"}
                     enablePoweredByContainer={false}
                     suppressDefaultStyles
                     styles={{
