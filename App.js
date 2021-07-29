@@ -4,6 +4,7 @@ import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
 import HomeScreen from "./src/screens/HomeScreen";
 import DestinationSearch from "./src/screens/DestinationSearch";
 import SearchResults from "./src/screens/SearchResults";
+import HomeMap from "./src/components/HomeMap";
 
 export default function App() {
   return (
@@ -11,7 +12,8 @@ export default function App() {
         <View style={styles.container}>
           {/*<HomeScreen />*/}
           {/*  <DestinationSearch />*/}
-            <SearchResults />
+          {/*  <SearchResults />*/}
+            <HomeMap />
           <StatusBar style="auto" />
         </View>
       </SafeAreaView>
