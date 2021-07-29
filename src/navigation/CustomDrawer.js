@@ -9,7 +9,13 @@ const CustomDrawer = (props) => {
 
             <View style={{backgroundColor: 'black', padding: 20,}}>
 
-                <Pressable onPress={() => console.log("Make Money Driving")}>
+                <View style={{borderTopWidth: 1, borderColor: '#eee', borderBottomWidth: 1}}>
+                    <Pressable onPress={() => console.log("Make Money Driving")}>
+                        <Text style={{color: '#dddddd', fontSize: 18, paddingVertical: 5,}}>Do more with your account</Text>
+                    </Pressable>
+                </View>
+
+                <Pressable onPress={() => console.log("Account")}>
                     <Text style={{color: '#dddddd', fontSize: 18, paddingVertical: 5,}}>Do more with your account</Text>
                 </Pressable>
 
