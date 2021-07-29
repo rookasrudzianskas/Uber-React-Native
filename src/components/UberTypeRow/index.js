@@ -6,7 +6,7 @@ import {Ionicons} from "@expo/vector-icons";
 const UberTypeRow = (props) => {
 
     const type = props;
-    console.log(type.type.type);
+    console.log(type.type);
 
     return (
         <View style={styles.container}>
