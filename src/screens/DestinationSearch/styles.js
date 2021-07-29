@@ -11,6 +11,21 @@ const styles = StyleSheet.create({
         marginVertical: 5,
         // marginTop: -10,
     },
+    row: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        margin: 5,
+    },
+    iconContainer: {
+        backgroundColor: "#a2a2a2",
+        padding: 7,
+        borderRadius: 50,
+        marginRight: 15,
+
+    },
+    locationText: {
+
+    },
 
 });
 
