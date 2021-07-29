@@ -38,7 +38,7 @@ const RouteMap = (props) => {
                     <MapViewDirections
                         origin={origin}
                         destination={destination}
-                        apikey={GOOGLE_MAPS_API_KEY}
+                        apikey={"AIzaSyBmXijpsVGRk39hnHdg6aWoeZ_Uaj81B-Y"}
                         strokeWidth={3}
                         strokeColor="hotpink"
                     />
