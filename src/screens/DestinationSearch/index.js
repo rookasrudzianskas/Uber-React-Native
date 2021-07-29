@@ -31,7 +31,10 @@ const DestinationSearch = (props) => {
         // fires everytime the origin place and destination place changes
         if(originPlace && destinationPlace) {
             // navigation
-            navigation.navigate('SearchResults');
+            navigation.navigate('SearchResults', {
+                originPlace: originPlace,
+                destinationPlace: destinationPlace,
+            });
         }
     }
 
