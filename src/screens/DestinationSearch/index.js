@@ -23,7 +23,7 @@ const DestinationSearch = (props) => {
                     placeholder='From'
                     onPress={(data, details = null) => {
                         setDestinationPlace({data, details});
-                        console.log(data, details);
+                        // console.log(data, details);
                     }}
                     styles={{
                         textInput: styles.textInput,
@@ -40,7 +40,7 @@ const DestinationSearch = (props) => {
                     placeholder='Where to?'
                     onPress={(data, details = null) => {
                         setDestinationPlace({data, details});
-                        console.log(data, details);
+                        // console.log(data, details);
                     }}
                     styles={{
                         textInput: styles.textInput,
