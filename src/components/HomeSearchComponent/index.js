@@ -1,7 +1,7 @@
 import React from 'react';
 import {Text, View} from "react-native";
 import styles from "./styles";
-import {AntDesign, Entypo, Feather} from "@expo/vector-icons";
+import {AntDesign, Entypo, Feather, FontAwesome5, Ionicons} from "@expo/vector-icons";
 import { MaterialIcons } from '@expo/vector-icons';
 
 const HomeSearch = () => {
@@ -31,6 +31,19 @@ const HomeSearch = () => {
                 </View>
 
                 <Text style={styles.destinationText}>Spin Nightclub</Text>
+            </View>
+
+            <View style={styles.row}>
+                <View style={{flexDirection: "row", alignItems: 'center', flex: 1}}>
+                    <Ionicons name="ios-gift-outline" size={20} color="black" />
+                    <Text style={styles.destinationText}>302 pts</Text>
+                </View>
+
+                <View style={{flexDirection: "row", alignItems: 'center'}}>
+                    <Text style={styles.destinationText}>Rewards Hub</Text>
+                    <FontAwesome5 name="arrow-right"  style={{marginLeft: 10}} size={20} color="lightgrey" />
+                </View>
+
             </View>
 
         </View>
