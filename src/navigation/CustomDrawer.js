@@ -10,11 +10,18 @@ const CustomDrawer = (props) => {
 
             <View style={{backgroundColor: 'black', padding: 20,}}>
 
+                <View style={{marginBottom: 20,}}>
+                    <View style={{backgroundColor: '#cacaca', width: 60, height: 60, borderRadius: 30,}}>
+
+                    </View>
+
+                </View>
+
                 <View style={{borderTopWidth: 1, borderColor: '#212121', borderBottomWidth: 1}}>
                     <Pressable onPress={() => console.log("Make Money Driving")}>
                         <View style={{flexDirection: 'row', alignItems: 'center'}}>
-                            <Text style={{color: '#dddddd', fontSize: 22, paddingVertical: 10, }}>Messages</Text>
-                            <Entypo style={{marginLeft: 10}}name="dot-single" size={27} color="Azure" />
+                            <Text style={{color: '#dddddd', fontSize: 22, paddingVertical: 18, }}>Messages</Text>
+                            <Entypo style={{marginLeft: 3}} name="dot-single" size={27} color="#00AFF8FF" />
                         </View>
                     </Pressable>
                 </View>
