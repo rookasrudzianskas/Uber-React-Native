@@ -16,6 +16,7 @@
     "react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
     "react-native-google-places-autocomplete": "^2.2.0",
     "react-native-maps": "^0.28.0",
+    "react-native-maps-directions": "^1.8.0",
     "react-native-web": "~0.13.12"
   },
   "devDependencies": {
