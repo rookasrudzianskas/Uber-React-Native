@@ -7,6 +7,7 @@ import SearchResults from "./src/screens/SearchResults";
 import HomeMap from "./src/components/HomeMap";
 import * as Location from "expo-location";
 
+
 export default function App() {
 
 
@@ -28,14 +29,6 @@ export default function App() {
         })();
     }, []);
 
-    // useEffect(() => {
-    //     if(Platform.OS === 'android') {
-    //         androidPermissions();
-    //     } else {
-    //         // request permissions
-    //
-    //     }
-    // }, []);
 
     // end of live location thing 👆
 
