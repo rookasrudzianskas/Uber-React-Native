@@ -11,16 +11,10 @@ const RouteNavigator = (props) => {
 
     const Stack = createStackNavigator();
 
-    function Something() {
-        return (
-            <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-                <Text>Home Screen</Text>
-            </View>
-        );
-    }
+
     return (
             <Stack.Navigator initialRouteName="Home">
-                <Stack.Screen name="Home" component={DestinationSearch}  options={{
+                <Stack.Screen name="Home" component={HomeScreen}  options={{
                     headerShown: false,
                 }} />
             </Stack.Navigator>
