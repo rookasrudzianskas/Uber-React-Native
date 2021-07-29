@@ -32,7 +32,7 @@ const UberTypes = () => {
                 </View>
 
                 <View style={styles.arrow}>
-                    <Ionicons name="arrow-forward" size={24} color="black" />
+                    <Ionicons name="arrow-forward" size={24} color="lightgrey" />
                 </View>
             </View>
 
