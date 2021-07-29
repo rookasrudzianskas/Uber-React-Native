@@ -45,7 +45,7 @@ const DestinationSearch = (props) => {
                         // console.log(data, details);
                     }}
                     styles={{
-                        textInput: styles.textInput,
+                        textInput: styles.textInput2,
                     }}
                     fetchDetails={true}
                     query={{

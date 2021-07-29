@@ -9,6 +9,13 @@ const styles = StyleSheet.create({
         padding: 10,
         backgroundColor: '#eee',
         marginVertical: 5,
+        // marginTop: -10,
+    },
+    textInput2: {
+        padding: 10,
+        backgroundColor: '#eee',
+        marginVertical: 5,
+        marginTop: -350,
     }
 });
 
