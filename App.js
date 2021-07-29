@@ -3,13 +3,15 @@ import React from 'react';
 import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
 import HomeScreen from "./src/screens/HomeScreen";
 import DestinationSearch from "./src/screens/DestinationSearch";
+import SearchResults from "./src/screens/SearchResults";
 
 export default function App() {
   return (
       <SafeAreaView>
         <View style={styles.container}>
           {/*<HomeScreen />*/}
-            <DestinationSearch />
+          {/*  <DestinationSearch />*/}
+            <SearchResults />
           <StatusBar style="auto" />
         </View>
       </SafeAreaView>
