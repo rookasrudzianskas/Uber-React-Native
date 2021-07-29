@@ -7,6 +7,9 @@ const CustomDrawer = (props) => {
     return (
         <DrawerContentScrollView {...props}>
 
+            <View style={{backgroundColor: 'black'}}>
+
+            </View>
             <DrawerItemList {...props} />
         </DrawerContentScrollView>
     );
