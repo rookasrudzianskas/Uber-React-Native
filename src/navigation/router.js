@@ -5,6 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import {Text, View} from "react-native";
 import HomeScreen from "../screens/HomeScreen";
 import DestinationSearch from "../screens/DestinationSearch";
+import SearchResults from "../screens/SearchResults";
 
 const RouteNavigator = (props) => {
 
@@ -13,9 +14,19 @@ const RouteNavigator = (props) => {
 
     return (
             <Stack.Navigator initialRouteName="Home">
+
                 <Stack.Screen name="Home" component={HomeScreen}  options={{
                     headerShown: false,
                 }} />
+
+                <Stack.Screen name="DestinationSearch" component={DestinationSearch}  options={{
+                    headerShown: false,
+                }} />
+
+                <Stack.Screen name="SearchResults" component={SearchResults}  options={{
+                    headerShown: false,
+                }} />
+
             </Stack.Navigator>
     );
 };
