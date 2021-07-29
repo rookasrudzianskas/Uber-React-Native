@@ -48,7 +48,14 @@ const HomeMap = (props) => {
                             longitude: car.longitude }}
                             // image={require("../../../assets/images/top-UberX.png")}
                         >
-                            <Image source={getImageName(car.type)} style={{height: 60, width: 60, resizeMode: 'contain' }}/>
+                            <Image source={getImageName(car.type)} style={{
+                                height: 60,
+                                width: 60,
+                                resizeMode: 'contain',
+                                transform: [{
+                                    rotate: `${car.heading}deg`,
+                                }]
+                            }}/>
                         </Marker>
 
                     ))}
