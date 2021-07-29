@@ -10,7 +10,7 @@ import {useRoute} from "@react-navigation/native";
 const SearchResults = (props) => {
 
     const route = useRoute();
-    console.log("🚀",route.props);
+    console.log("🚀",route.params);
 
     return (
         <View style={{justifyContent: 'space-between'}}>
