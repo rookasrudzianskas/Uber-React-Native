@@ -1,25 +1,26 @@
 import React from 'react';
 import 'react-native-gesture-handler';
-import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import {Text, View} from "react-native";
-import HomeScreen from "../screens/HomeScreen";
-import DestinationSearch from "../screens/DestinationSearch";
-import SearchResults from "../screens/SearchResults";
 import HomeNavigator from "./Home";
+import { createDrawerNavigator } from '@react-navigation/drawer';
+
 
 const RouteNavigator = (props) => {
 
     const Stack = createStackNavigator();
+    const Drawer = createDrawerNavigator();
 
 
     return (
-            <Stack.Navigator initialRouteName="Home" screenOptions={{
-                headerShown: false,
-            }}>
-                <Stack.Screen name="HomeNavigator" component={HomeNavigator} />
-            </Stack.Navigator>
+
+        <Drawer.Navigator>
+
+            <Drawer.Screen name="Home" component={HomeNavigator} />
+            {/*<Drawer.Screen name="Article" component={Article} />*/}
+
+        </Drawer.Navigator>
     );
+
 };
 
 export default RouteNavigator;
