@@ -5,11 +5,6 @@ import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplet
 
 
 const DestinationSearch = (props) => {
-
-    const [fromText, setFromText] = useState('');
-    const [destinationText, setDestinationText] = useState('');
-
-
     const [originPlace, setOriginPlace] = useState(null);
     const [destinationPlace, setDestinationPlace] = useState(null);
 
@@ -44,7 +39,6 @@ const DestinationSearch = (props) => {
                     }}
                     styles={{
                         textInput: styles.textInput,
-                        // marginTop: -100,
                     }}
                     fetchDetails={true}
                     query={{
