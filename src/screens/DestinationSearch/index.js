@@ -43,7 +43,7 @@ const DestinationSearch = (props) => {
     //
     // console.log(text);
     //
-    // // end of live location thing 👆
+    // // end of live location thing 👆 //
 
 
 
@@ -57,6 +57,8 @@ const DestinationSearch = (props) => {
                         setOriginPlace({data, details});
                         // console.log(data, details);
                     }}
+                    currentLocation={true}
+                    currentLocationLabel={true}
                     enablePoweredByContainer={false}
                     suppressDefaultStyles
                     styles={{
