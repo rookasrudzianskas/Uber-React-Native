@@ -5,6 +5,8 @@ import styles from "./styles";
 import cars from "../../../assets/data/cars";
 import MapViewDirections from "react-native-maps-directions";
 
+const GOOGLE_MAPS_API_KEY = "AIzaSyBmXijpsVGRk39hnHdg6aWoeZ_Uaj81B-Y";
+
 const RouteMap = (props) => {
 
     const {type} = props;
@@ -36,7 +38,7 @@ const RouteMap = (props) => {
                     <MapViewDirections
                         origin={origin}
                         destination={destination}
-                        apikey={"AIzaSyBmXijpsVGRk39hnHdg6aWoeZ_Uaj81B-Y"}
+                        apikey={GOOGLE_MAPS_API_KEY}
                         strokeWidth={3}
                         strokeColor="hotpink"
                     />
