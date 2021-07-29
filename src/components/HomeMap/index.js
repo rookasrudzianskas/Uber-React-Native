@@ -9,7 +9,8 @@ const HomeMap = (props) => {
     const {type} = props;
 
 
-    const getImageName = () => {
+    const getImageName = (type) => {
+
         if(type === 'UberX') {
             return require('../../../assets/images/top-UberX.png');
         }
