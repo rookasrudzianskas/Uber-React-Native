@@ -9,6 +9,8 @@ const UberTypes = () => {
 
     const confirm = () => {
         console.log("Clicked")
+
+        // next some magical stuff goes in here
     }
 
     return (

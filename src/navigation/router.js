@@ -6,6 +6,7 @@ import {Text, View} from "react-native";
 import HomeScreen from "../screens/HomeScreen";
 import DestinationSearch from "../screens/DestinationSearch";
 import SearchResults from "../screens/SearchResults";
+import HomeNavigator from "./Home";
 
 const RouteNavigator = (props) => {
 
@@ -16,19 +17,7 @@ const RouteNavigator = (props) => {
             <Stack.Navigator initialRouteName="Home" screenOptions={{
                 headerShown: false,
             }}>
-
-                <Stack.Screen name="Home" component={HomeScreen}  options={{
-                    headerShown: false,
-                }} />
-
-                <Stack.Screen name="DestinationSearch" component={DestinationSearch}  options={{
-                    headerShown: false,
-                }} />
-
-                <Stack.Screen name="SearchResults" component={SearchResults}  options={{
-                    headerShown: false,
-                }} />
-
+                <Stack.Screen name="HomeNavigator" component={HomeNavigator} />
             </Stack.Navigator>
     );
 };
