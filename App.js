@@ -10,7 +10,7 @@ export default function App() {
   return (
       // <SafeAreaView>
         <View style={styles.container}>
-          <HomeScreen />
+          {/*<HomeScreen />*/}
           {/*  <DestinationSearch />*/}
           {/*  <SearchResults />*/}
           <StatusBar style="auto" />
