@@ -33,8 +33,8 @@ export default function App() {
     return (
       // <SafeAreaView>
         <View style={styles.container}>
-          <RouteNavigator />
           <StatusBar style="auto" />
+          <RouteNavigator />
         </View>
       // </SafeAreaView>
   );
