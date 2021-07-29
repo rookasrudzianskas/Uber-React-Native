@@ -12,6 +12,7 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: "bold",
         marginBottom: 10,
+        flex: 1,
     },
     text: {
         color: "#bed9ff",
