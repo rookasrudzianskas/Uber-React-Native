@@ -16,7 +16,7 @@ const CustomDrawer = (props) => {
                             <Image style={{width: 80, height: 80, borderRadius: 50,}} source={require("../../assets/images/rokas.jpeg")} />
 
                             <View style={{marginLeft: 10, alignItems: 'flex-start'}}>
-                                <Text style={{color: 'white', fontSize: 18, marginBottom: 15}}>Rokas Rudzianskas</Text>
+                                <Text style={{color: 'white', fontSize: 18, marginBottom: 15, fontWeight: '600'}}>Rokas Rudzianskas</Text>
                                 <View style={{flexDirection: "row", marginHorizontal: 10, alignItems: 'center'}}>
                                     <Text style={{color: "grey", fontSize: 18, marginRight: 10}}>5.00</Text>
                                     <Foundation name="star" size={19} color="lightgrey" />
