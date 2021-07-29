@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import HomeNavigator from "./Home";
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import {Text, View} from "react-native";
+import CustomDrawer from "./CustomDrawer";
 
 
 const RouteNavigator = (props) => {
@@ -20,7 +21,10 @@ const RouteNavigator = (props) => {
 
     return (
 
-        <Drawer.Navigator initialRouteName="HomeNavigator">
+        <Drawer.Navigator initialRouteName="HomeNavigator" drawerContent={(props) => (
+            <CustomDrawer {...props} />
+            )
+        }>
 
             <Drawer.Screen name="Home" component={HomeNavigator} />
 
