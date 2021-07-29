@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {SafeAreaView, Text, TextInput, View} from "react-native";
 import styles from "./styles";
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
@@ -7,6 +7,13 @@ import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplet
 const DestinationSearch = (props) => {
     const [originPlace, setOriginPlace] = useState(null);
     const [destinationPlace, setDestinationPlace] = useState(null);
+
+    useEffect(() =>  {
+        // fires everytime the origin place and destination place changes
+        if(originPlace && destinationPlace) {
+            console.log("Redirect something");
+        }
+    }, [originPlace, destinationPlace]);
 
 
 
@@ -17,7 +24,7 @@ const DestinationSearch = (props) => {
                 <GooglePlacesAutocomplete
                     placeholder='From'
                     onPress={(data, details = null) => {
-                        setDestinationPlace({data, details});
+                        setOriginPlace({data, details});
                         // console.log(data, details);
                     }}
                     styles={{
