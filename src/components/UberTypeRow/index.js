@@ -6,7 +6,7 @@ const UberTypeRow = () => {
     return (
         <View>
 
-            <Image />
+            <Image style={styles.image} source={require("../../../assets/images/UberX.jpeg")} />
             <View style={styles.middleContainer}>
 
             </View>
