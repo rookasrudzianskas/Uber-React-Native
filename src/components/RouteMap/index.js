@@ -20,8 +20,8 @@ const RouteMap = ({origin, destination}) => {
     }
 
 
-    console.log(originLoc);
-
+    // console.log(originLoc);
+// this is working on
 
     return (
 
