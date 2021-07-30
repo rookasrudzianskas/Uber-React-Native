@@ -4,6 +4,9 @@ import {Platform, SafeAreaView, StyleSheet, Text, View} from 'react-native';
 import * as Location from "expo-location";
 import RouteNavigator from "./src/navigation/router";
 import {NavigationContainer} from "@react-navigation/native";
+import Amplify from 'aws-amplify'
+import config from './src/aws-exports'
+Amplify.configure(config)
 
 
 export default function App() {
