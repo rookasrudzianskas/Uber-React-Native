@@ -7,18 +7,11 @@ import MapViewDirections from "react-native-maps-directions";
 
 const GOOGLE_MAPS_API_KEY = "AIzaSyBmXijpsVGRk39hnHdg6aWoeZ_Uaj81B-Y";
 
-const RouteMap = (props) => {
+const RouteMap = ({origin, destination}) => {
 
-    const {type} = props;
-    const origin = {
-        latitude: 28.450627,
-        longitude: -16.263045,
-    }
+    const originLoc = origin.details.geometry.location;
 
-    const destination = {
-        latitude: 28.456208,
-        longitude: -16.259098,
-    }
+    const destinationLoc = destination.details.geometry.location;
 
 
     return (
@@ -36,8 +29,8 @@ const RouteMap = (props) => {
                     }}
                 >
                     <MapViewDirections
-                        origin={origin}
-                        destination={destination}
+                        origin={originLoc}
+                        destination={destinationLoc}
                         apikey={"AIzaSyBmXijpsVGRk39hnHdg6aWoeZ_Uaj81B-Y"}
                         strokeWidth={6}
                         strokeColor="black"
@@ -45,14 +38,14 @@ const RouteMap = (props) => {
 
 
                         <Marker
-                            coordinate={origin}
+                            coordinate={originLoc}
                             title={"Origin"}
                         >
                         </Marker>
 
 
                         <Marker
-                            coordinate={destination}
+                            coordinate={destinationLoc}
                             title={"Destination"}
                         >
                         </Marker>
