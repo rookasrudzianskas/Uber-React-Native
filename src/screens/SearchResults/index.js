@@ -10,7 +10,7 @@ import {useRoute} from "@react-navigation/native";
 const SearchResults = (props) => {
 
     const route = useRoute();
-    const {origin, destination} = route.params;
+    const {originPlace, destinationPlace} = route.params;
     // console.log("🚀",route.params);
 
     return (
@@ -18,7 +18,7 @@ const SearchResults = (props) => {
 
 
             <View style={{height: Dimensions.get('window').height - 550}}>
-                <RouteMap origin={origin} destination={destination} />
+                <RouteMap origin={originPlace} destination={destinationPlace} />
             </View>
 
             <View style={{height: 550}}>

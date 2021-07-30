@@ -9,9 +9,18 @@ const GOOGLE_MAPS_API_KEY = "AIzaSyBmXijpsVGRk39hnHdg6aWoeZ_Uaj81B-Y";
 
 const RouteMap = ({origin, destination}) => {
 
-    const originLoc = origin.details.geometry.location;
+    const originLoc = {
+        latitude: origin.details.geometry.location.lat,
+        longitude: origin.details.geometry.location.lng,
+    }
 
-    const destinationLoc = destination.details.geometry.location;
+    const destinationLoc = {
+        latitude: destination.details.geometry.location.lat,
+        longitude: destination.details.geometry.location.lng,
+    }
+
+
+    console.log(originLoc);
 
 
     return (
