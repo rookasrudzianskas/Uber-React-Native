@@ -31,10 +31,12 @@ const RouteMap = ({origin, destination}) => {
                     initialRegion={{
                         // latitude: 37.78825,
                         // longitude: -122.4324,
-                        latitude: 28.450627,
-                        longitude: -16.263045,
-                        latitudeDelta: 0.0222,
-                        longitudeDelta: 0.0121,
+                        // latitude: 28.450627,
+                        latitude: origin.details.geometry.location.lat,
+                        // longitude: -16.263045,
+                        longitude:  origin.details.geometry.location.lng,
+                        latitudeDelta: 0.0333,
+                        longitudeDelta: 0.0212,
                     }}
                 >
                     <MapViewDirections
