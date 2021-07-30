@@ -6,9 +6,9 @@ import RouteNavigator from "./src/navigation/router";
 import {NavigationContainer} from "@react-navigation/native";
 import Amplify from 'aws-amplify';
 import config from './src/aws-exports';
-import { withAuthenticator } from 'aws-amplify-react-native';
+// import { withAuthenticator } from 'aws-amplify-react-native';
 
-Amplify.configure(config)
+// Amplify.configure(config)
 
 
 const App = () => {
@@ -50,5 +50,5 @@ const styles = StyleSheet.create({
   },
 });
 
-export default withAuthenticator(App)
+export default App;
 
