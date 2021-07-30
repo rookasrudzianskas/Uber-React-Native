@@ -4,12 +4,14 @@ import {Platform, SafeAreaView, StyleSheet, Text, View} from 'react-native';
 import * as Location from "expo-location";
 import RouteNavigator from "./src/navigation/router";
 import {NavigationContainer} from "@react-navigation/native";
-import Amplify from 'aws-amplify'
-import config from './src/aws-exports'
+import Amplify from 'aws-amplify';
+import config from './src/aws-exports';
+import { withAuthenticator } from 'aws-amplify-react-native';
+
 Amplify.configure(config)
 
 
-export default function App() {
+const App = () => {
 
 
     const [location, setLocation] = useState(null);
@@ -47,3 +49,6 @@ const styles = StyleSheet.create({
 
   },
 });
+
+export default withAuthenticator(App)
+
