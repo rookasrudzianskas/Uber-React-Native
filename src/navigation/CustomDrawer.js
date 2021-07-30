@@ -43,7 +43,7 @@ const CustomDrawer = (props) => {
                 </Pressable>
 
                 <Pressable onPress={() => console.log("Make Money Driving")}>
-                    <Text style={{color: 'white', fontSize: 18, paddingVertical: 5,}}>Make money driving</Text>
+                    <Text style={{color: 'white', fontSize: 18, paddingVertical: 5, marginBottom: 10}}>Make money driving</Text>
                 </Pressable>
             </View>
             <DrawerItemList {...props} />
