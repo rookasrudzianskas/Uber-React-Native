@@ -15,7 +15,7 @@
       "function": {
         "uber890df231890df231PostConfirmation": {
           "deploymentBucketName": "amplify-uber-dev-95658-deployment",
-          "s3Key": "amplify-builds/uber890df231890df231PostConfirmation-6330773870772b456c56-build.zip"
+          "s3Key": "amplify-builds/uber890df231890df231PostConfirmation-5347674a7a535a2b386c-build.zip"
         }
       },
       "auth": {
